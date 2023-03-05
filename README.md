@@ -8,6 +8,7 @@
 
 ``` shell
 # 开发
+pnpm install
 pnpm run dev  
 # //=> http://localhost:8020/example/index.html
 # 打包
