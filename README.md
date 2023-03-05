@@ -12,6 +12,7 @@ pnpm run dev
 # //=> http://localhost:8020/example/index.html
 # 打包
 pnpm run build
+
 # 安装
 $ pnpm install @power137/utils
 ```
