@@ -1,0 +1,34 @@
+{
+  "name": "@power137/utils",
+  "version": "0.0.8",
+  "private": false,
+  "description": "power的一个工具库",
+  "type": "module",
+  "main": "lib/utils.cjs.js",
+  "jsnext:main": "lib/utils.esm.js",
+  "module": "lib/utils.esm.js",
+  "browser": "lib/utils.browser.js",
+  "directories": {
+    "example": "工具库"
+  },
+  "scripts": {
+    "dev": "rollup -wc rollup.config.dev.js",
+    "build": "rollup -c rollup.config.js",
+    "test": "node example"
+  },
+  "keywords": [],
+  "author": "power",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "rollup": "^3.18.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
