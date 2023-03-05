@@ -1,7 +1,9 @@
 import {deepCopy } from '../src/index.js'
+ // deepClone
+const x = {a: {b: 11}}
+let y = x
 
-console.log(deepCopy)
-const a ={a: 1}
-// let  b = deepCopy(a)
-// b.a = 3
-// console.log(a)
+y =deepCopy(x)
+y.a.b = 33
+
+console.log(x,y, 'x', 'y')
