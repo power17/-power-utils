@@ -10,13 +10,15 @@ export function find (list, f) {
  * @param {Array<Object>} cache
  * @return {*}
  */
-function deepCopy (obj, cache = []) {
+export const deepCopy = (obj, cache = []) => {
   // just return if obj is immutable value
   if (obj === null || typeof obj !== 'object') {
     return obj
   }
 
   // if obj is hit, it is in circular structure
+  // let b = {a:2};
+  //	b.b = b;
   const hit = find(cache, c => c.original === obj)
   if (hit) {
     return hit.copy
@@ -37,4 +39,3 @@ function deepCopy (obj, cache = []) {
   return copy
 }
 
-export default deepCopy

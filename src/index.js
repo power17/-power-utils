@@ -1,7 +1,16 @@
-import deepCopy from './deepCopy.js'
-export default {
-	deepCopy
-}
+import { deepCopy } from './deepCopy.js'
+import  { bubbleSort,insertSort }  from './sort.js'
 export {
-	deepCopy
+	deepCopy,
+	bubbleSort,
+	insertSort 
 }
+
+
+
+export default  {
+	deepCopy,
+	bubbleSort,
+	insertSort
+}
+

@@ -1,9 +1,6 @@
-import {deepCopy } from '../src/index.js'
- // deepClone
-const x = {a: {b: 11}}
-let y = x
+import { bubbleSort, deepCopy , insertSort } from '../src/index.js'
 
-y =deepCopy(x)
-y.a.b = 33
-
-console.log(x,y, 'x', 'y')
+ // 冒泡算法
+console.log(bubbleSort([4,5,43,2,1]),'冒泡算法')
+// 插入算法
+console.log(bubbleSort([4,5,6,414,3,2,1]),'插入算法')
